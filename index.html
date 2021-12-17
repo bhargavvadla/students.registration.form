@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <!-- ICON-COUNT ICONS -->
+    <link rel='stylesheet' href='https://unicons.iconscout.com/release/v4.0.0/css/line.css'>
+    <!-- GOOGLE FONTS -->
+    <link href='https://fonts.googleapis.com/css2?family=McLaren&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'
+    rel='stylesheet'>
+    <!-- CUSTOM STYLES -->
+    <link rel='stylesheet' href='./assets/css/styles.css'>
+    <!-- <meta http-equiv='refresh' content='3'> -->
+    <title>Bhargav Student Registration Form</title>
+</head>
+<body>
+    <!-- ====================== Home ========================== -->
+    <div class="main_container">
+        <div class="student_reg_form">
+            <h1 class="heading">Students Registration Form</h1>
+            <form method="post" action="#" accept-charset="utf-8">
+                <div class="name_container">
+                    <div class="input_containers">
+                        <input class="input form_input" type="text" autocomplete="off" name="fname" id="fname"
+                            placeholder=" " />
+                        <label for="fname" class="form_label">Firstname</label><br />
+                    </div>
+                    <p class="error_msg" id="fnameError"></p>
+                    <br />
+                    <div class="input_containers">
+                        <input class="input form_input" type="text" name="lname" id="lname" autocomplete="off"
+                            placeholder=" " />
+                        <label for="lname" class="form_label">Lastname</label><br />
+                    </div>
+                    <p class="error_msg" id="lnameError"></p><br />
+                    <div class="input_containers">
+                        <input class="input form_input" type="email" name="email" id="email" autocomplete="off"
+                            placeholder=" " />
+                        <label for="email" class="form_label">Email</label><br />
+                    </div>
+                    <p class="error_msg" id="emailError"></p><br />
+                    <div class="input_containers">
+                        <input class="input form_input" type="text" name="phone" id="phone" autocomplete="off"
+                            placeholder=" " />
+                        <label for="phone" class="form_label">Phone Number</label><br />
+                    </div>
+                    <p class="error_msg" id="phoneError"></p><br />
+                    <div class="input_containers">
+                        <select id="country" class="drop_downs input form_input">
+                            <option value="" selected></option>
+                            <option value="india">India</option>
+                            <option value="america">America</option>
+                            <option value="england">England</option>
+                            <option value="italy">Italy</option>
+                            <option value="southAfrica">South Africa</option>
+                            <option value="australia">Australia</option>
+                            <option>Java</option>
+                            <option>Python</option>
+                        </select>
+                        <label for="country" class="form_label">Country</label>
+                    </div>
+                    <p class="error_msg" id="countryError"></p><br />
+    
+                    <div class="skills_container">
+                        <div class="skills_sub_cont">
+                            <div class="skills_checks">
+                                <label class="container">Html
+                                    <input type="checkbox" class="checkbox" value="html" />
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="skills_checks">
+                                <label class="container">Css
+                                    <input type="checkbox" class="checkbox" value="css" />
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="skills_checks">
+                                <label class="container">JavaScript
+                                    <input type="checkbox" class="checkbox" value="javaScript" />
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="skills_sub_cont">
+                            <div class="skills_checks">
+                                <label class="container">
+                                    Java
+                                    <input type="checkbox" class="checkbox" value="java" />
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="skills_checks">
+                                <label class="container">
+                                    Python
+                                    <input type="checkbox" class="checkbox" value="python" />
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="skills_checks">
+                                <label class="container">
+                                    React Js
+                                    <input type="checkbox" class="checkbox" value="reactJs" />
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="skills_sub_cont">
+                            <div class="skills_checks">
+                                <label class="container">
+                                    RDBMS
+                                    <input type="checkbox" class="checkbox" value="rdbms" />
+    
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="skills_checks">
+                                <label class="container">
+                                    Ruby
+                                    <input type="checkbox" class="checkbox" value="ruby" />
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="skills_checks">
+                                <label class="container">
+                                    AWS
+                                    <input type="checkbox" class="checkbox" value="aws" />
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="span">Selected Skills:</span><br />
+                    <p class="checked_list" id="checkedList"></p>
+                    <p class="error_msg" id="checkboxError"></p><br />
+    
+                    <label>Education</label><br />
+                    <div class="education">
+                        <div>
+                            <label class="container">
+                                Tenth
+                                <input type="radio" class="education_radio" name="education_radio" value="10" />
+                                <span class="radio_btn"></span>
+                            </label>
+                        </div>
+                        <div>
+                            <label class="container">
+                                Intermediate
+                                <input type="radio" class="education_radio" name="education_radio" value="12" />
+                                <span class="radio_btn"></span>
+                            </label>
+                        </div>
+                        <div>
+                            <label class="container">
+                                Graduation
+                                <input type="radio" class="education_radio " name="education_radio" value="16" />
+                                <span class="radio_btn"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <span class="span">Selected Education:</span><br />
+                    <p class="error_msg" id="radioError"></p>
+                    <p class="checked_list" id="selectedRadio"></p>
+                    <br />
+                    <div class="input_containers">
+                        <input type="date" id="dob" class="input form_input">
+                        <label for="dob" class="form_label">Date of Birth</label><br />
+                    </div>
+                    <span class="span">Selected Date:</span>
+                    <p class="error_msg" id="dobError"></p>
+                    <p class="checked_list" id="selectedDate"></p>
+                    <br />
+                    <button class="submit_btn" id="submitBtn" type="submit">Submit</button>
+                </div>
+    
+            </form>
+        </div>
+    </div>
+    
+    <div class="thanks_container d_none" id="thanksContainer">
+        <div class="msg_card">
+            <h1 class="thanks_heading">Your form is Successfully Submitted </h1>
+            <h1 class="thanks_msg">Thank you!</h1>
+            <button class="home_btn" id="homeBtn" onClick="window.location.reload();">Go Home</button>
+        </div>
+    </div>
+    <script src='./assets/js/main.js'></script>
+</body>
+</html>

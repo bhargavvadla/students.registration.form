@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+body {
+    height: 100%;
+    position: relative;
+}
+
+.main_container {
+    width: 100%;
+    padding: 70px 50px;
+    min-height: 100vh;
+    background: #fff;
+    background-image: linear-gradient(#8360c3, #2ebf91);
+    display: flex;
+    justify-content: center;
+}
+
+.student_reg_form {
+    width: 120%;
+    padding: 20px;
+    border-radius: 15px;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #e9eaed;
+    align-items: left;
+    box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, .04);
+    background: #fff;
+}
+
+.heading {
+    margin-bottom: 40px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.input {
+    width: 100%;
+    font-size: 18px;
+    padding: 10px;
+    margin-top: 8px;
+    border: 1px solid #e9eaed;
+    border-radius: 5px;
+    background: transparent;
+    outline: none;
+    top: 0;
+    left: 0;
+    transition: .3s;
+}
+
+.skills_sub_cont {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.skills_checks {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.skill_name {
+    padding: 0;
+    margin: 0;
+}
+
+.education {
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.submit_btn {
+    padding: 10px 15px;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 7px;
+    background: #1b66ca;
+    outline: none;
+    border-width: 0;
+    cursor: pointer;
+    width: 100%;
+}
+
+.home_btn {
+    padding: 10px 15px;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 7px;
+    background: #1a73e8;
+    outline: none;
+    border-width: 0;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.error_msg {
+    font-size: 12px;
+    color: red;
+    margin-top: 5px;
+}
+
+.checked_list {
+    font-size: 13px;
+    color: #1c66ca;
+    margin-top: 5px;
+}
+
+.span {
+    font-size: 10px;
+}
+
+input[type="checkbox"] {
+    background: #ddd;
+    outline: none;
+    border: 10px solid #1c66ca;
+}
+
+input[type=checkbox]:hover {
+    cursor: pointer;
+}
+
+
+/* Checkbox */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #eee;
+}
+
+.container:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+.container input:checked~.checkmark {
+    background-color: #2196F3;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked~.checkmark:after {
+    display: block;
+}
+
+.container .checkmark:after {
+    left: 7px;
+    top: 4px;
+    width: 5px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.input_containers {
+    position: relative;
+    height: 50px;
+}
+
+.form_input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 0;
+    height: 100%;
+    z-index: 1;
+}
+
+.skills_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form_label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 17px;
+    padding: 0 5px;
+    cursor: text;
+    transition: .3s;
+}
+
+.form_input:focus {
+    border: 2px solid #1c66ca;
+}
+
+.form_input:focus+.form_label {
+    top: -12px;
+    left: 15px;
+    font-size: 12px;
+    color: #1c66ca;
+    background: #fff;
+    z-index: 1;
+    padding: 5px 10px;
+}
+
+.form_input:not(:placeholder-shown).form_input:not(:focus)+.form_label {
+    top: -12px;
+    left: 15px;
+    font-size: 12px;
+    background: #fff;
+    z-index: 1;
+    padding: 5px 10px;
+}
+
+.radio_btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+
+.container:hover input~.radio_btn {
+    background-color: #ccc;
+}
+
+.container input:checked~.radio_btn {
+    background-color: #2196F3;
+}
+
+.radio_btn:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked~.radio_btn:after {
+    display: block;
+}
+
+.container .radio_btn:after {
+    top: 6px;
+    left: 6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+
+@media screen and (min-width:768px) {
+    .main_container {
+        padding-top: 80px;
+    }
+
+    .student_reg_form {
+        padding: 40px;
+        max-width: 700px;
+        margin-left: 0;
+    }
+}
+
+.thanks_container {
+    height: auto;
+    width: 100%;
+    background: #cde8ff;
+    padding: 50px 20px 20px 20px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    display: flex;
+}
+
+.d_none {
+    display: none;
+}
+
+.msg_card {
+    background: #1b2444;
+    padding: 40px 30px;
+    max-width: 600px;
+    color: #fff;
+    border-radius: 15px;
+    height: 200px;
+}
+
+.thanks_heading {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width:576px) {
+
+
+    .education {
+        display: block;
+    }
+
+    .skills_sub_cont {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .skills_checks {
+        width: 100%;
+    }
+
+    .container {
+        margin-left: 25px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .main_container {
+        padding: 0;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .student_reg_form {
+        width: 90%;
+    }
+
+    .heading {
+        padding: 20px 10px 15px 10px;
+        margin-bottom: 10px;
+    }
+
+}
